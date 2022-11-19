@@ -1,0 +1,10 @@
+.vscode
+node_modules
+files
+output
+outro
+package-lock.json
+logo.png
+wallpaper.png
+ffmpeg.exe
+ffprobe.exe
