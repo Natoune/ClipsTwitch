@@ -1,3 +1,4 @@
+require('dotenv').config();
 const { ClientCredentialsAuthProvider } = require('@twurple/auth');
 const request                = require('request');
 const { DownloaderHelper }   = require('node-downloader-helper');
@@ -7,8 +8,8 @@ const ffmpeg                 = require('ffmpeg');
 const concat                 = require('ffmpeg-concat');
 
 // Define our constants, you will change these with your own
-const TWITCH_CLIENT_ID = 'du2nq0p1gn55qgxdg5c59cz0j1qff8';
-const TWITCH_SECRET    = 'u32l8d092gbwdc9ovzblbqlmanfi7c';
+const TWITCH_CLIENT_ID = process.env.TWITCH_CLIENT_ID;
+const TWITCH_SECRET    = process.env.TWITCH_SECRET;
 const auth = new ClientCredentialsAuthProvider(TWITCH_CLIENT_ID, TWITCH_SECRET);
 
 const TOP_STREAMERS_NAME = [
