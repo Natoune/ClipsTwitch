@@ -1,8 +1,7 @@
 .vscode
 node_modules
-files
-output
-outro
+files/*
+output/*
 package-lock.json
 logo.png
 wallpaper.png
