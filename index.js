@@ -118,7 +118,7 @@ auth.getAccessToken().then(accessToken => {
 											path.join(__dirname, `files\\${in3}.mp4`),
 											path.join(__dirname, `files\\${in4}.mp4`),
 											path.join(__dirname, `files\\${in5}.mp4`),
-											path.join(__dirname, `files\\outro\\${Math.floor(Math.random() * 18)}.mp4`),
+											path.join(__dirname, `files\\${Math.floor(Math.random() * 18)}.mp4`),
 										],
 										transition: {
 											name: 'CrossZoom',
